@@ -31,7 +31,7 @@ public class Sort {
 
     public static int partition(int[] data, int start, int end) throws Exception {
 
-        if (data == null || start < 0 || end > data.length - 1 || start >= end) {
+        if (data == null || data.length <= 0 || start < 0 || end > data.length - 1) {
             throw new Exception("Invalid Parameters");
         }
 
